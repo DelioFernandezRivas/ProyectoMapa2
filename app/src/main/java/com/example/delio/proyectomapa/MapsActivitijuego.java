@@ -124,10 +124,8 @@ public class MapsActivitijuego extends FragmentActivity implements OnMapReadyCal
         mMap.setMyLocationEnabled(true);
 
         // Engadimos tesoro
-        mMap.addMarker(new MarkerOptions().position(tesoro).title("Marca de Tesoro"));
-        mMap.moveCamera(CameraUpdateFactory.newLatLng(tesoro));
-        LatLng center = new LatLng(42.236938, -8.713721);
-        int radius = 200;
+        LatLng center = new LatLng(42.237363,  -8.714270);
+        int radius = 50;
         CircleOptions circleOptions = new CircleOptions()
                 .center(center)
                 .radius(radius)
@@ -136,6 +134,28 @@ public class MapsActivitijuego extends FragmentActivity implements OnMapReadyCal
                 .fillColor(Color.argb(32, 33, 150, 243));
         Circle circle = mMap.addCircle(circleOptions);
         circle.setVisible(true);
+
+        LatLng center2 = new LatLng(42.236882,  -8.715576);
+        int radius2 = 50;
+        CircleOptions circleOptions2 = new CircleOptions()
+                .center(center2)
+                .radius(radius2)
+                .strokeColor(Color.parseColor("#0D47A1"))
+                .strokeWidth(4)
+                .fillColor(Color.argb(32, 33, 150, 243));
+        Circle circle2 = mMap.addCircle(circleOptions2);
+        circle2.setVisible(true);
+
+        LatLng center3 = new LatLng(42.237195,   -8.712156);
+        int radius3 = 50;
+        CircleOptions circleOptions3 = new CircleOptions()
+                .center(center3)
+                .radius(radius3)
+                .strokeColor(Color.parseColor("#0D47A1"))
+                .strokeWidth(4)
+                .fillColor(Color.argb(32, 33, 150, 243));
+        Circle circle3 = mMap.addCircle(circleOptions3);
+        circle3.setVisible(true);
     }
 
 
